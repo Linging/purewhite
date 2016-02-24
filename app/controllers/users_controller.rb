@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   	if @user.save
+              log_in @user       #login after signup successed
   		redirect_to @user
   		flash[:success] = "Welcome to Sample App"
   	else
@@ -25,6 +26,6 @@ class UsersController < ApplicationController
 
   	def user_params
   		params.require(:user).permit(:name, :email, :password,
-  									 :password_confirmation)
+  									 :password_confirmation)    #strong params : sure that only nesserary params can be pass_in
   	end
 end
