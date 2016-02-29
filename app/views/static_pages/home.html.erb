@@ -5,6 +5,22 @@
     <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
   </head>
   <body>
+  <% if logged_in? %>
+    <div class="row">
+    	<aside class="col-md-4">
+       	<section class="user_info">
+       		<%= render 'shared/user_info' %>
+        	</section>
+      		<section class="micropost_form">
+        		<%= render 'shared/micropost_form' %>
+      		</section>
+    	</aside>
+       <div class="col-md-8">
+       	<h3>Micropost Feed</h3> 
+       	<%= render 'shared/feed' %>
+       </div>
+   </div>
+  <% else %>
     <h1>Sample App</h1>
     <p>
       This is the home page for the
@@ -12,5 +28,6 @@
       sample application.
         <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
     </p>
+    <% end %>
   </body>
 </html>
