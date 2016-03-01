@@ -2,27 +2,15 @@
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+And this's my first rails program, referred to [Ruby on Rails](http://railstutorial-china.org/book/) for **Chinese version**
+Just a sample App with many bugs, if you want the integrated [Code](https://github.com/mhartl/sample_app_3rd_edition)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Ruby version 2.1.5
+
+* Start at Feb 2016
+
+* Finish at Mar 2016 
+
+* Version 1.0
+
