@@ -49,7 +49,7 @@ class UsersController < ApplicationController
 
   	def user_params
   		params.require(:user).permit(:name, :email, :password,
-  									 :password_confirmation)    #strong params : sure that only nesserary params can be pass_in
+  		                            :password_confirmation)    #strong params : sure that only nesserary params can be pass_in
   	end
 
   	def correct_user
